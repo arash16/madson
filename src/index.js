@@ -22,14 +22,18 @@ var madson = (function () {
         return Buffer.isBuffer(input) ? mDecode(input) : mEncode(input);
     }
 
-    return extend(packer, {
+    var madson = extend(packer, {
         createCodec: createCodec,
         codec: { preset: preset },
         encode: mEncode,
         decode: mDecode
     });
+
+    if ("isServer") {
+		if (typeof module == 'object')
+		    module.exports = madson;
+	}
+	else global.madson = madson;
+	return madson;
 })();
 
-//if ("isServer")
-    if (typeof module == 'object')
-        module.exports = madson;

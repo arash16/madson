@@ -1,6 +1,6 @@
 {
   "name": "madson",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "madson is a binary serialization library for javascript.",
   "author": "Arash Shakery <arash.shakery@gmail.com> (arash16.com)",
   "license": "Apache-2.0",
@@ -27,14 +27,11 @@
     "babel-plugin-ceval": "*",
     "babel-plugin-constif": "*",
     "babel-plugin-merge": "*",
-    "babel-plugin-minify-dead-code-elimination": "^0.1.7",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "babel-plugin-transform-es2015-block-scoping": "^6.24.1",
     "chai": "^3.5.0",
-    "istanbul": "^0.4.5",
     "mocha": "^3.4.1",
     "mocha-phantomjs": "^4.1.0",
-    "nxutils": "*",
-    "nyc": "^10.3.2"
+    "nxutils": "*"
   }
 }
