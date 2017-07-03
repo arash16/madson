@@ -1,7 +1,7 @@
 # madson
 [![NPM version](https://img.shields.io/npm/v/madson.svg)](https://www.npmjs.com/package/madson)
 
-madson is a binary serialization library.
+madson is a binary serialization library for javascript.
 
 ## Installation
 
