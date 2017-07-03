@@ -9,7 +9,7 @@ build-node:
 	IS_NODE_MODULE=1 IS_SERVER=1 IS_CLIENT=0 IS_DEV=0 $(BABEL) -s true --source-root ../ src/index.js -o lib/index.js
 
 build-browser:
-	IS_NODE_MODULE=0 IS_SERVER=0 IS_CLIENT=1 IS_DEV=0 $(BABEL) -s true src/index.js -o dist/madMin.js
+	IS_NODE_MODULE=0 IS_SERVER=0 IS_CLIENT=1 IS_DEV=0 $(BABEL) -s true src/index.js -o dist/madson.js
 
 test: test-node test-phantom
 

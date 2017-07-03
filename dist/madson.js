@@ -1,4 +1,4 @@
-var madMin = function () {
+var madson = function () {
   var global = window || function () {
     return this;
   }.call(null),
@@ -1359,6 +1359,6 @@ var madMin = function () {
 }(); //if ("isServer")
 
 
-if (typeof module == 'object') module.exports = madMin;
+if (typeof module == 'object') module.exports = madson;
 
-//# sourceMappingURL=madMin.js.map
+//# sourceMappingURL=madson.js.map

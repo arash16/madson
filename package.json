@@ -1,7 +1,7 @@
 {
-  "name": "madmin",
+  "name": "madson",
   "version": "1.0.0",
-  "description": "madMin is binary serialization library.",
+  "description": "madson is binary serialization library.",
   "author": "Arash Shakery <arash.shakery@gmail.com> (arash16.com)",
   "license": "Apache-2.0",
   "main": "lib/index.js",
@@ -10,7 +10,7 @@
     "build": "make build",
     "test": "make test"
   },
-  "repository": "https://github.com/arash16/madMin",
+  "repository": "https://github.com/arash16/madson",
   "keywords": [
     "json",
     "serialize",

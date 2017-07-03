@@ -1,4 +1,4 @@
-var madMin = (function () {
+var madson = (function () {
     import "nxutils/generic/base";
 
     import "./utils";
@@ -32,4 +32,4 @@ var madMin = (function () {
 
 //if ("isServer")
     if (typeof module == 'object')
-        module.exports = madMin;
+        module.exports = madson;
