@@ -1,6 +1,6 @@
 {
   "name": "madson",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "madson is a binary serialization library for javascript.",
   "author": "Arash Shakery <arash.shakery@gmail.com> (arash16.com)",
   "license": "Apache-2.0",
@@ -13,8 +13,14 @@
   "repository": "https://github.com/arash16/madson",
   "keywords": [
     "json",
+    "stringify",
     "serialize",
-    "protobuf"
+    "serialization",
+    "protobuf",
+    "protocol-buffers",
+    "protocol", "buffer",
+    "pbf", "binary", "format",
+    "encoder", "decoder"
   ],
   "devDependencies": {
     "babel-cli": "^6.24.1",

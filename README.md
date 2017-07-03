@@ -3,6 +3,8 @@
 
 madson is a binary serialization library for javascript.
 
+Supports recursive self references.
+
 ## Installation
 
 ```sh
