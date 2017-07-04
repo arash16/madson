@@ -1,5 +1,5 @@
 function DecodeBuffer(options) {
-    this.codec = options && options.codec || preset;
+    this.codec = options && options.codec || madson.codec.preset;
     this.buffer = null;
     this.offset = 0;
 }

@@ -23,7 +23,7 @@ var madson = (function () {
     }
 
     var madson = extend(packer, {
-        createCodec: createCodec,
+        createCodec: Codec,
         codec: { preset: preset },
         encode: mEncode,
         decode: mDecode

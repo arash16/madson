@@ -1,6 +1,6 @@
 {
   "name": "madson",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "madson is a binary serialization library for javascript.",
   "author": "Arash Shakery <arash.shakery@gmail.com> (arash16.com)",
   "license": "Apache-2.0",
@@ -16,6 +16,9 @@
     "stringify",
     "serialize",
     "serialization",
+    "msgpack",
+    "MessagePack",
+    "message", "pack",
     "protobuf",
     "protocol-buffers",
     "protocol", "buffer",

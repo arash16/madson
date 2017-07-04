@@ -2,7 +2,7 @@ var MIN_BUFFER_SIZE = 2048;
 var MAX_BUFFER_SIZE = 65536;
 
 function EncodeBuffer(options) {
-    this.codec = options && options.codec || preset;
+    this.codec = options && options.codec || madson.codec.preset;
     this.buffers = [];
     this.buffer = null;
     this.offset = 0;

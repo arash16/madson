@@ -6,14 +6,16 @@ var preset = (function (preset) {
     function packError(value) {
         var out = {};
         for (var i = 0, key; key = ERROR_COLUMNS[i]; i++)
-            if (value[key]) out[key] = value[key];
+            if (!isUndefined(value[key]))
+            	out[key] = value[key];
         return out;
     }
     function unpackError(Class) {
         return function (value) {
             var out = new Class(value.message);
             for (var i = 0, key; key = ERROR_COLUMNS[i]; i++)
-                if (value[key]) out[key] = value[key];
+                if (!isUndefined(value[key]))
+                	out[key] = value[key];
             return out;
         };
     }
@@ -101,4 +103,4 @@ var preset = (function (preset) {
     }
 
     return preset;
-})(createCodec());
+})(Codec());
