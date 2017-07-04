@@ -1327,7 +1327,7 @@ var madson = function () {
       return new Buffer(value);
     }
 
-    [[0x0E, Error, unpackError(Error), packError], [0x01, EvalError, unpackError(EvalError)], [0x02, RangeError, unpackError(RangeError)], [0x03, ReferenceError, unpackError(ReferenceError)], [0x04, SyntaxError, unpackError(SyntaxError)], [0x05, TypeError, unpackError(TypeError)], [0x06, URIError, unpackError(URIError)], [0x0B, Boolean, unpackClass(Boolean), packValueOf], [0x0C, String, unpackClass(String)], [0x0F, Number, unpackClass(Number)], [0x0D, Date, unpackClass(Date), Number], [0x0A, RegExp, unpackRegExp, packRegExp], [0x3F, ObjectRef, unpackClass(ObjectRef), function (v) {
+    [[0x0E, Error, unpackError(Error), packError], [0x01, EvalError, unpackError(EvalError)], [0x02, RangeError, unpackError(RangeError)], [0x03, ReferenceError, unpackError(ReferenceError)], [0x04, SyntaxError, unpackError(SyntaxError)], [0x05, TypeError, unpackError(TypeError)], [0x06, URIError, unpackError(URIError)], [0x0B, Boolean, unpackClass(Boolean), packValueOf], [0x0C, String, unpackClass(String)], [0x0F, Number, unpackClass(Number)], [0x0D, Date, unpackClass(Date), Number], [0x0A, RegExp, unpackRegExp, packRegExp], [0x20, ObjectRef, unpackClass(ObjectRef), function (v) {
       return v.$ref;
     }]].forEach(function (ext) {
       preset.addExtPacker(ext[0], ext[1], [last = ext[3] || last, encode]);

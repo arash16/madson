@@ -46,7 +46,7 @@ npm install --save madson
 ```javascript
 var madson = require("madson");
 
-var preset = madson.codec.presset;
+var preset = madson.codec.preset;
 preset.addExtPacker(0x3F, MyClass, MyClassPacker);
 preset.addExtUnpacker(0x3F, MyClassUnpacker);
 
@@ -68,7 +68,6 @@ function MyClassUnpacker(buffer) {
   // return deserialized Object
   return new MyClass(array[0], array[1]);
 }
-
 
 
 var data = new MyClass(1, 2);

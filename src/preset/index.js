@@ -68,7 +68,7 @@ var preset = (function (preset) {
         [0x0F, Number, unpackClass(Number)],
         [0x0D, Date, unpackClass(Date), Number],
         [0x0A, RegExp, unpackRegExp, packRegExp],
-        [0x3F, ObjectRef, unpackClass(ObjectRef), v => v.$ref]
+        [0x20, ObjectRef, unpackClass(ObjectRef), v => v.$ref]
     ].forEach(function (ext) {
         preset.addExtPacker(ext[0], ext[1], [last = ext[3] || last, encode]);
         preset.addExtUnpacker(ext[0], [decode, ext[2]]);
